@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <script>
+        function MyClick()
+        {
+            let nome = document.getElementById("nome").value;
+            let idade = document.getElementById("idade").value
+            let msg = "";
+            if (idade >= 18)
+            {
+                msg = "Maior de idade: " + idade;
+            }
+            else
+            {
+                msg = "Menor de idade: " + idade;
+            }
+            alert("O seu nome é: " + nome + ". Mensagem: " + msg);
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Preencha com seus dados</h1>
+
+    <form>
+      <label for="nome">Primeiro nome:</label><br>
+      <input type="text" id="nome" name="nome"><br>
+      <label for="nome">Sobrenome:</label><br>
+      <input type="text" id="nome" name="nome"><br><br>
+      <label for="idade">Idade:</label><br>
+      <input type="text" id="idade" name="idade"><br><br>
+      <input type="button" id="enviar" name="enviar" value="Enviar" onclick="MyClick()">
+    </form>
+
+
+</body>
+</html>
